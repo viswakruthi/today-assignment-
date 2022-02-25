@@ -1,0 +1,19 @@
+x=[0,5,0,3,1,1,5,0]
+for value in range(0,len(x)):
+if x[value]<=0:
+del x[value]
+print(x)
+print(x)
+def test(lst):
+previous_digit=0
+ctr=0
+for digit in lst:
+if previous_digit==0 and digit=0:
+ctr+=1
+previous_digit=digit
+return ctr
+nums=[1,2,3,4,0,0,0,0,0,0,6,7,8,9,10,0,0,0,0,0,5,9,8,7,6,0,0,0,0,0,0,5,3,2,9,7,1]
+print("\noriginal list:")
+print(nums)
+print("\nnumber of groups of non-zero numbers separated by zeroes of the said list:")
+print(test(nums))
